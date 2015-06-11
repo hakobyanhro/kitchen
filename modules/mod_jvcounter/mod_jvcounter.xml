@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0.2" type="module"  method="upgrade" client="site">
+	<name>Счетчик посещений</name>
+    <author>Open Source Code Solutions Co</author>
+    <creationDate>Апрель 2013</creationDate>
+	<copyright>Copyright © 2012-2013 joomlaschetchik.ru</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL or later.</license>
+    <authorEmail>joomlashetchik@ya.ru</authorEmail>
+    <authorUrl>http://joomlaschetchik.ru/</authorUrl>
+    <version>3.0.2</version>
+	<description>Модуль статистики посещений joomlaschetchik.ru.</description>
+	<files>
+		<filename module="mod_jvcounter">mod_jvcounter.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		
+        <folder>tmpl</folder>
+        <folder>assets</folder>
+	</files>	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text" label="Суффикс класса модуля" description="" />
+        		<field name="headertext" default="" type="text" label="Текст заголовка" description="" />        		
+        		<field name="startofcounter" default="0" type="text" label="Начало отсчета" description="" />
+        		<field name="numberofdigits" default="5" type="text" label="Количество цифр" description="" />
+        		<field name="digittype" default="" type="folderlist" label="Стиль цифр" description="" directory="modules/mod_jvcounter/assets/images/digitstype" filter="" exclude="" stripext="" />
+        		<field name="template" default="" type="filelist" label="Шаблон модуля" description="" directory="modules/mod_jvcounter/tmpl" filter="" exclude="html" stripext="1" />
+				<field name="themes" default="" type="folderlist" label="Оформление модуля" description="" directory="modules/mod_jvcounter/assets/styles" filter="" exclude="" stripext="" />
+                <field name="textonline" default="На сайте" type="text" label="Текст Online" description="" />
+                <field name="texttoday" default="Сегодня" type="text" label="Текст сегодня" description="" />
+                <field name="textyesterday" default="Вчера" type="text" label="Текст вчера" description="" />
+                <field name="textthisweek" default="На этой недели" type="text" label="Текст неделя" description="" />
+                <field name="textlastweek" default="На прошлой недели" type="text" label="Текст прошлая неделя" description="" />
+                <field name="textthismonth" default="Этот месяц" type="text" label="Текст Этот месяц" description="" />
+                <field name="textlastmonth" default="Прошлый месяц" type="text" label="Текст Прошлый месяц" description="" />
+                <field name="textalldays" default="За все время" type="text" label="Текст Всего" description="" />
+			</fieldset>
+            <fieldset name="advanced">
+				<field name="startdaycounter" type="calendar" default="" label="Начинать отсчет с даты" description="" format="%Y-%m-%d 00:00:00" />
+                <field name="showonline" type="radio" default="1" class="btn-group" label="Показывать онлайн" description="">
+                  <option value="0">Нет</option>
+                  <option value="1">Да</option>
+                </field>
+                <field name="showtoday" type="radio" default="1" class="btn-group" label="Показывать сегодня" description="">
+                  <option value="0">Нет</option>
+                  <option value="1">Да</option>
+                </field>
+                <field name="showyesterday" type="radio" default="1" class="btn-group" label="Показывать вчера" description="">
+                  <option value="0">Нет</option>
+                  <option value="1">Да</option>
+                </field>
+                <field name="showthisweek" type="radio" default="1" class="btn-group" label="Показывать эту неделю" description="">
+                  <option value="0">Нет</option>
+                  <option value="1">Да</option>
+                </field>
+                <field name="showlastweek" type="radio" default="1" class="btn-group" label="Показывать последнюю неделю" description="">
+                  <option value="0">Нет</option>
+                  <option value="1">Да</option>
+                </field>
+                <field name="showthismonth" type="radio" default="1" class="btn-group" label="Показывать этот месяц" description="">
+                  <option value="0">Нет</option>
+                  <option value="1">Да</option>
+                </field>
+                <field name="showlastmonth" type="radio" default="1"  class="btn-group" label="Показывать последний месяц" description="">
+                  <option value="0">Нет</option>
+                  <option value="1">Да</option>
+                </field>
+                <field name="showalldays" type="radio" default="1" class="btn-group" label="Показывать за все дни" description="">
+                  <option value="0">Нет</option>
+                  <option value="1">Да</option>
+                </field>
+                
+                <field name="showip" type="radio" default="1" class="btn-group" label="Показывать IP" description="">
+                  <option value="0">Нет</option>
+                  <option value="1">Да</option>
+                </field>
+                <field name="showdatetoday" type="radio" default="1" class="btn-group" label="Показывать Дату/Время/Сегодня" description="">
+                  <option value="0">Нет</option>
+                  <option value="1">Да</option>
+                </field>
+                <field name="datetodayformat" default="Y-m-d" type="text" label="Дата/Время формат" description="" />
+            </fieldset>
+		</fields>
+        
+	</config>
+</extension>

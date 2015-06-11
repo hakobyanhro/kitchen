@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5">
+	<name>Armenian Language Pack</name>
+	<packagename>hy-AM</packagename>
+	<version>2.5.8.1</version> <!-- change the version # when updating, will display in manager -->
+	<author>Peter Osipof</author> <!-- will display in manager -->
+	<authorEmail>peterosipof@gmail.com</authorEmail> <!-- will display in manager -->
+	<authorUrl>http://www.joomlahye.com</authorUrl> <!-- will display in manager -->
+	<url></url>
+	<packager></packager>
+	<packagerurl>http://joomlacode.org/gf/project/armenian</packagerurl>
+	<description>Joomla 2.5 Armenian Language Package</description>
+	<files>
+	        <file type="language" client="site" id="hy-AM">site_hy-AM.zip</file>
+        	<file type="language" client="administrator" id="hy-AM">admin_hy-AM.zip</file>
+	</files>
+</extension>

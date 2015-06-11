@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" client="administrator" type="language" method="upgrade">
+	<name>Armenian (Հայերեն)</name>
+	<tag>hy-AM</tag>
+	<version>2.5.8.1</version>
+	<creationDate>2012-12-02</creationDate>
+	<author>Peter Osipof</author>
+	<authorEmail>peterosipof@gmail.com</authorEmail>
+	<authorUrl>www.joomlahye.com</authorUrl>
+	<copyright>Copyright (C) 2005 - 2013 Joomla Open Source Matters. All rights reserved</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description>Armenian language pack (administrator) for Joomla! 2.5</description>
+	<files>
+		<filename>index.html</filename>
+		<filename>hy-AM.com_admin.ini</filename>
+		<filename>hy-AM.com_admin.sys.ini</filename>
+		<filename>hy-AM.com_content.ini</filename>
+		<filename>hy-AM.com_finder.ini</filename>
+		<filename>hy-AM.com_media.ini</filename>
+		<filename>hy-AM.com_media.sys.ini</filename>
+		<filename>hy-AM.com_search.ini</filename>
+		<filename>hy-AM.com_users.ini</filename>
+		<filename>hy-AM.ini</filename>
+		<filename>hy-AM.lib_joomla.ini</filename>
+		<filename>hy-AM.localise.php</filename>
+		<filename>hy-AM.mod_custom.ini</filename>
+		<filename>hy-AM.mod_custom.sys.ini</filename>
+		<filename>hy-AM.mod_feed.ini</filename>
+		<filename>hy-AM.mod_feed.sys.ini</filename>
+		<filename>hy-AM.plg_system_cache.ini</filename>
+		<filename>hy-AM.plg_system_cache.sys.ini</filename>
+		<filename>hy-AM.plg_system_languagecode.ini</filename>
+		<filename>hy-AM.plg_system_languagecode.sys.ini</filename>
+		<filename>hy-AM.plg_system_remember.ini</filename>
+		<filename>hy-AM.plg_system_remember.sys.ini</filename>
+		<filename>hy-AM.tpl_hathor.ini</filename>
+		<filename>hy-AM.tpl_hathor.sys.ini</filename>	
+		<filename file="meta">hy-AM.xml</filename>
+		<filename file="meta">install.xml</filename>
+	</files>
+</extension>

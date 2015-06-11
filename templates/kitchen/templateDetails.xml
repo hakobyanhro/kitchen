@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension type="template" version="3.1" client="site" method="upgrade">
+	<name>kitchen</name>
+	<author>Artur</author>
+	<creationDate>May 2015</creationDate>
+	<copyright>Copyright (C) 2015</copyright>
+	<license></license>
+	<authorEmail>artur77-88@mail.ru</authorEmail>
+	<authorUrl></authorUrl>
+	<version>3.0.0</version>
+	<description>Kitchen Website</description>
+<files>
+	<filename>index.php</filename>
+	<filename>index.html</filename>
+	<filename>templateDetails.xml</filename>
+    <filename>css/reset.css</filename>
+    <filename>css/styles.css</filename>
+    <filename>css/index.html</filename>
+    <filename>html/index.html</filename>
+    <filename>js/jquery.js</filename>
+    <filename>js/jquery-ui-tabs-rotate.js</filename>
+    <filename>js/myscripts.js</filename>
+    <filename>js/index.html</filename>
+    <filename>language/index.html</filename>
+    <filename>images/article-png.png</filename>
+    <filename>images/border.png</filename>
+    <filename>images/content-text-img.png</filename>
+    <filename>images/footer-bg.png</filename>
+    <filename>images/fractal-logo.png</filename>
+    <filename>images/home-icona.png</filename>
+    <filename>images/logo.png</filename>
+    <filename>images/message-icona.png</filename>
+    <filename>images/phone-icona.png</filename>
+    <filename>images/read-more.png</filename>
+    <filename>images/search.png</filename>
+    <filename>images/text-icona.png</filename>
+    <filename>images/top.png</filename>
+    <filename>images/video-img.png</filename>
+    <filename>images/content-img.jpg</filename>
+    <filename>images/slider-img-1.jpg</filename>
+    <filename>images/selected-item.gif</filename>
+</files>
+<positions>
+        <position>logo</position>
+		<position>menu-top</position>
+        <position>menu-main</position>
+		<position>language</position>
+        <position>slideshow</position>
+        <position>search</position>
+        <position>right</position>
+		<position>bottom-video</position>
+</positions>
+<config><!-- no need to change -->
+		<fields name="params">
+
+			<fieldset name="basic">
+				<!-- PIE-->
+				<field name="pie" type="radio" default="0" 
+					label="TPL_FRONTEND_PARAMETER_PIE_LABEL" 
+					description="TPL_FRONTEND_PARAMETER_PIE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+<languages folder="language">
+</languages>
+</extension>

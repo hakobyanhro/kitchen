@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" version="3" method="upgrade" group="system">
+	<name>System - Openstat Counter</name>
+	<productName>openstatcounter</productName>
+	<creationDate>November 2013</creationDate>
+	<copyright>Copyright (C) 2013 Openstat. All rights reserved.</copyright>
+	<author>WEBO Software</author>
+	<authorEmail>support@openstat.ru</authorEmail>
+	<authorUrl>https://www.openstat.ru/</authorUrl>
+	<license>GNU GPLv2 License</license>
+	<version>0.1</version>
+	<description>PLG_OPENSTATCOUNTER_DESCRIPTION</description>
+	<scriptfile>script.php</scriptfile>
+	<files folder="site">
+		<filename plugin="openstatcounter">openstat.counter.api.php</filename>
+		<filename plugin="openstatcounter">openstatcounter.php</filename>
+		<filename plugin="openstatcounter">index.html</filename>
+		<folder>language</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_openstatcounter.sys.ini</language>
+		<language tag="en-US">en-GB/en-GB.plg_system_openstatcounter.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_system_openstatcounter.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="openstatcountercode" type="textarea" label="PLG_OPENSTATCOUNTER_CODE" description="PLG_OPENSTATCOUNTER_CODE_DESCRIPTION" default=""/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

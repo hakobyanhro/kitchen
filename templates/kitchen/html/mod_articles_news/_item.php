@@ -1,0 +1,42 @@
+<?php
+/**
+ * @package     Joomla.Site
+ * @subpackage  mod_articles_news
+ *
+ * @copyright   Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+defined('_JEXEC') or die;
+$item_heading = $params->get('item_heading', 'h4');
+?>
+<?php if ($params->get('item_title')) : ?>
+
+	<<?php echo $item_heading; ?> class="newsflash-title<?php echo $params->get('moduleclass_sfx'); ?>">
+	<?php if ($params->get('link_titles') && $item->link != '') : ?>
+		<a href="<?php echo $item->link;?>">
+			<?php echo $item->title;?></a>
+	<?php else : ?>
+		<?php echo $item->title; ?>
+	<?php endif; ?>
+	</<?php echo $item_heading; ?>>
+
+<?php endif; ?>
+
+<?php if (!$params->get('intro_only')) :
+	echo $item->afterDisplayTitle;
+endif; ?>
+
+<?php echo $item->beforeDisplayContent; ?>
+
+<?php if ($params->get('show_publish_date')) : ?>
+		<span class="icon-calendar"></span><time datetime="<?php echo JText::sprintf(JHtml::_('date', $item->publish_up, JText::_('DATE_FORMAT_LC4'))); ?>"><?php echo JText::sprintf(JHtml::_('date', $item->publish_up, JText::_('DATE_FORMAT_LC4'))); ?></time> 
+<?php endif; ?>
+<p>
+<?php echo strip_tags($item->introtext); ?>
+
+<?php if (isset($item->link) && $item->readmore != 0 && $params->get('readmore')) :
+	echo '<span class="read-more"><a href="'.$item->link.'">'.$item->linkText.'</a><a href="'.$item->link.'"><img class="read-more-img" src="images/read-more.png" alt="read-more" /></a></span>';
+
+	endif; ?>
+</p>

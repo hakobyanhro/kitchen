@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+    <name>Система - Счетчик посещений</name>
+    <author>Open Source Code Solutions Co</author>
+    <creationDate>Апрель 2013</creationDate>
+	<copyright>Copyright © 2012-2013 joomlaschetchik.ru</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL or later.</license>
+    <authorEmail>joomlashetchik@ya.ru</authorEmail>
+    <authorUrl>http://joomlaschetchik.ru/</authorUrl>
+    <version>3.0.1</version>
+    <description>Плагин компонента</description>
+	<scriptfile>script.php</scriptfile>
+    <files>
+        <filename plugin="jvcounter">jvcounter.php</filename>
+		<filename plugin="jvcounter">index.html</filename>
+        <folder   plugin="jvcounter">jvcounter</folder>
+		<filename>script.php</filename>
+    </files>
+    <install>
+		<sql>
+			<file charset="utf8" driver="mysql">jvcounter/install.sql</file>
+		</sql>
+    	
+    </install>
+    <uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">jvcounter/uninstall.sql</file>
+		</sql>
+    	
+    </uninstall>
+	<config>
+		<fields name="params">
+		</fields>
+	</config>
+ 
+</extension>
